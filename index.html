@@ -10,21 +10,25 @@
 <body>
 
     <section class="sign-up">
-        <div class="container flex">
+        <div class="container">
             <div class="contact-form">
                 <div class="contact-form-logo">
-                    <img src="img/Logo.png" alt="">
+                    <img class="logo" src="img/Logo.png" alt="">
                 </div>
                 <h1 class="form-title">Sign Up</h1>
                 <p class="form-subtitle">It's not long before you embark on this journey!</p>
-                <form action="">
+                <form name="user-form" action="">
                     <label for="user-email">E-mail</label>
-                    <input id="user-email" type="email" placeholder="name@email.com">
+                    <p>
+                        <input id="user-email" type="email" placeholder="name@email.com">
+                    </p>
                     <label for="user-pass">Password</label>
-                    <input id="user-pass" type="password" placeholder="8+ characters, 1 capital letter">
+                    <p>
+                        <input id="user-pass" type="password" placeholder="8+ characters, 1 capital letter">
+                    </p>                   
                     <input id="check-it" type="checkbox" checked>
-                    <label for="check-it">I've read and agree with Terms of Service and our Privacy Police</label>
-                    <button id="btnSubmit" type="submit">Create an account</button>
+                    <label for="check-it">I've read and agree with Terms of Service</label>
+                    <button class="btn" id="btnSubmit" type="submit">Create an account</button>
                 </form>
                 <p class="sign-in-title">Already have an account?<a href="#"> Sign in</a></p>
             </div>
