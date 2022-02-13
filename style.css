@@ -39,9 +39,10 @@ label[for="check-it"]{
 }
 input[type='email'],
 input[type='password']{
-    width: 230px;
+    width: 100%;
+    max-width: 300px;
     height: 40px;
-    padding: 5px;
+    padding: 10px 50px;
     border-radius: 15px;
 }
 input::placeholder{
@@ -93,7 +94,7 @@ input::placeholder{
     width: 18px;
     height: 18px;
     position: absolute;
-    left: 200px;
+    left: 14px;
     top: 47px;
 }
 .illustr-form{
@@ -121,5 +122,63 @@ input::placeholder{
         to bottom right, #93E6FF, #72C4FF);
 }
 
+/* Media Queries */
 
-
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contact-form,
+    .illustr-form{
+        width: 50%;
+    }
+    .form-subtitle,
+    .sign-in-title{
+        font-size: 14px;
+    }
+    .input-icon {
+        display: none;
+    }
+    label[for="check-it"]{
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 15px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .contact-form{
+        width: 50%;
+    }
+    .input-icon {
+        display: none;
+    }
+}
+@media (max-width: 575.98px) {
+    .logo{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form{
+        order: 2;
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+    }
+    .illustr-form{
+        order: 1;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+    .form-title,
+    .form-subtitle,
+    .form-group,
+    .sign-in-title{
+        text-align: center;
+    }
+    .input-icon {
+        display: none;
+    }
+}
