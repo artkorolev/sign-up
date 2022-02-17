@@ -177,10 +177,15 @@ button:hover{
         padding: 10px;
         border-radius: 15px;
     }
+
+    .illustr-img{
+        width: 50%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .contact-form{
+    .contact-form,
+    .illustr-img{
         width: 50%;
     }
 }
@@ -204,13 +209,17 @@ button:hover{
     .illustr-form{
         order: 1;
         width: 100%;
+        min-height: 350px;
         border-radius: 15px 15px 0 0;
     }
-
+  
     .form-title,
     .form-subtitle,
     .form-group,
     .sign-in-title{
         text-align: center;
+    }
+    .illustr-img{
+        width: 40%;
     }
 }
