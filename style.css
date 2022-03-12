@@ -190,6 +190,7 @@ button:hover{
     .illustr-img{
         width: 50%;
     }
+    
 }
 
 @media (max-width: 575.98px) {
@@ -214,14 +215,21 @@ button:hover{
         min-height: 350px;
         border-radius: 15px 15px 0 0;
     }
-  
+
     .form-title,
     .form-subtitle,
     .form-group,
     .sign-in-title{
         text-align: center;
     }
+
     .illustr-img{
         width: 40%;
+    }
+
+    .input-icon{
+        position: absolute;
+        right: 14px;
+        top: 49px;
     }
 }
